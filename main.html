@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Head Generator</title>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="seedrandom.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Head Generator</h1>
+    </div>
+    <div class="controls">
+      <button onclick="generateHead()">Generate</button>
+      <input id="scale" type="number" min="1" max="10" value="1" />
+      <label>Seed</label>
+      If empty, creates new seed and puts it in the input field
+      <input id="inputStr" type="text" class="text" />
+    </div>
+    <div class="canvas">
+      <canvas id="smallCnv" height="30" width="30"></canvas>
+      <canvas id="lrgCnv" height="300" width="300"></canvas>
+    </div>
+    <span id="output"></span>
+
+    <script>
+      init()
+    </script>
+  </body>
+</html>
